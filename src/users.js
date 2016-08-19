@@ -4,22 +4,22 @@ import 'fetch';
 
 @inject(HttpClient)
 export class Users {
-  heading = 'Github Users';
-  users = [];
+
 
   constructor(http) {
     http.configure(config => {
       config
         .useStandardConfiguration()
-        .withBaseUrl('https://api.github.com/');
+        .withBaseUrl('https://source.unsplash.com/category/');
     });
 
     this.http = http;
   }
 
   activate() {
-    return this.http.fetch('users')
-      .then(response => response.json())
-      .then(users => this.users = users);
+    return this.http.fetch('nature')
+      .then((response) => {
+        this.url = response.url;
+      });
   }
 }
