@@ -34,14 +34,6 @@ gulp.task('build-html', function() {
     .pipe(gulp.dest(paths.output));
 });
 
-// copies changed css files to the output directory
-// gulp.task('build-css', function() {
-//   return gulp.src(paths.css)
-//     .pipe(changed(paths.output, {extension: '.css'}))
-//     .pipe(gulp.dest(paths.output))
-//     .pipe(browserSync.stream());
-// });
-
 // Next, we add a new task for building css.
 gulp.task('build-css', function() {
     return gulp.src(paths.style)
