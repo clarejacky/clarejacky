@@ -13,28 +13,49 @@ body {
   overflow-y: auto;
 }
 
-.me-page img{
-    position: relative;
-    z-index: 0;
-    width: 100%;
+.me-page {
+   h2, p {
+      position:absolute;
+      z-index:1;
+      top: 200px;
+      width: 100%;
+      left: 0;
+      padding-top: 24px;
+  }
+  h2 span, p span {
+     color: white;
+     opacity: 0.5;
+     /*font: bold 24px/45px Helvetica, Sans-Serif;*/
+    //  letter-spacing: -1px;
+     background: rgb(0, 0, 0); /* fallback color */
+     background: black;
+     padding: 6px;
+     margin: 18px;
+  }
 }
-.me-page h2, .me-page p{
-    position:absolute;
-    z-index:1;
-    top: 200px;
-    width: 100%;
-    left: 0;
+.workshop-page {
+  img {
+      position: relative;
+      z-index: 0;
+      width: 100%;
+  }
+  .inclusion, .goals {
+    position: absolute;
+     z-index:1;
+     top: 200px;
+    //  left: 0;
+     padding-top: 24px;
+     color: white;
+     opacity: .75;
+     /*font: bold 24px/45px Helvetica, Sans-Serif;*/
+    //  letter-spacing: -1px;
+     background: rgb(0, 0, 0); /* fallback color */
+     background: black;
+   }
+
 }
-.me-page h2 span, .me-page p span {
-   color: white;
-   opacity: 0.5;
-   /*font: bold 24px/45px Helvetica, Sans-Serif;*/
-   letter-spacing: -1px;
-   background: rgb(0, 0, 0); /* fallback color */
-   background: black;
-   padding: 6px;
-   margin: 18px;
-}
+
+
 
 @media print {
   .page-host {
