@@ -14,23 +14,28 @@ body {
 }
 
 .me-page {
+
    h2, p {
       position:absolute;
       z-index:1;
-      top: 200px;
       width: 100%;
       left: 0;
       padding-top: 24px;
+      color: white;
+      opacity: 0.25;
+      /*font: bold 24px/45px Helvetica, Sans-Serif;*/
+     //  letter-spacing: -1px;
+      background: rgb(0, 0, 0); /* fallback color */
+      background: black;
+      padding: 6px;
+      margin: 18px;
+      width: 400px;
   }
-  h2 span, p span {
-     color: white;
-     opacity: 0.5;
-     /*font: bold 24px/45px Helvetica, Sans-Serif;*/
-    //  letter-spacing: -1px;
-     background: rgb(0, 0, 0); /* fallback color */
-     background: black;
-     padding: 6px;
-     margin: 18px;
+  h2 {
+    top: 200px;
+  }
+  p {
+    top: 300px;
   }
 }
 .workshop-page {
@@ -42,7 +47,7 @@ body {
   .inclusion, .goals {
     position: absolute;
      z-index:1;
-     top: 200px;
+    //  top: 200px;
     //  left: 0;
      padding-top: 24px;
      color: white;
@@ -53,6 +58,10 @@ body {
      background: black;
    }
 
+}
+.nav {
+  margin-top: 24px;
+  border-bottom: solid black;
 }
 
 
