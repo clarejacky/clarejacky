@@ -1,6 +1,6 @@
 export class App {
   configureRouter(config, router) {
-    config.title = 'Aurelia';
+    config.title = 'YOU';
     config.map([
       { route: ['', 'welcome'], name: 'welcome',      moduleId: 'welcome',      nav: true, title: 'YOU' },
       { route: 'users',         name: 'users',        moduleId: 'users',        nav: true, title: 'inclusion' },
