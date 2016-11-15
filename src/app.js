@@ -1,9 +1,10 @@
 export class App {
   configureRouter(config, router) {
     config.map([
-      { route: ['', 'welcome'], name: 'welcome',      moduleId: 'welcome',      nav: true, title: 'D&I' },
-      { route: 'users',         name: 'users',        moduleId: 'users',        nav: true, title: 'TECH' },
-      { route: 'child-router',  name: 'child-router', moduleId: 'child-router', nav: true, title: 'MORE ABOUT ME' }
+      { route: ['', 'clare'], name: 'clare',      moduleId: 'clare',      nav: true, title: 'CLARE H' },
+      { route: 'diversity', name: 'diversity',      moduleId: 'diversity',      nav: true, title: 'D&I' },
+      { route: 'tech',         name: 'tech',        moduleId: 'tech',        nav: true, title: 'TECH' },
+      { route: 'more',  name: 'more', moduleId: 'more', nav: true, title: 'MORE' }
     ]);
 
     this.router = router;
