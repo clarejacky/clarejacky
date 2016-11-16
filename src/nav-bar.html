@@ -1,11 +1,6 @@
 <template bindable="router">
   <nav class="nav nav-pills navbar-fixed-top container" role="navigation">
     <div class="nav__custom">
-      <!-- <ul class="nav navbar-nav"> -->
-        <!-- <li>
-          <a data-toggle="collapse" data-target="#skeleton-navigation-navbar-collapse.in" href.bind="row.href">CLARE H JACKY</a>
-        </li>
-      </ul> -->
 
       <ul class="nav navbar-nav navbar-right">
         <li repeat.for="row of router.navigation" class="${row.isActive ? 'active' : ''}">
@@ -16,7 +11,5 @@
         </li>
       </ul>
     </div>
-    <!-- <div class="collapse navbar-collapse" id="skeleton-navigation-navbar-collapse"> -->
-    <!-- </div> -->
   </nav>
 </template>
